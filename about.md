@@ -9,7 +9,7 @@ Machine learning engineer and brain scientist
 
 ### More Information
 
-https://www.linkedin.com/in/zhenjie-zhang-a9225816/
+[LinkedIn Profile](https://www.linkedin.com/in/zhenjie-zhang-a9225816/)
 
 ### Contact me
 
