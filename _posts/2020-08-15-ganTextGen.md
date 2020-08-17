@@ -10,5 +10,5 @@ published: true
 ![gan model]({{ site.baseurl }}/images/2020-08-15-ganTextGen/GAN.png)
 
 ### Minmax loss function:
-![minmax cost function] ({{ site.baseurl }}/images/2020-08-15-ganTextGen/minmaxcost.png)
+![minmax cost function]({{ site.baseurl }}/images/2020-08-15-ganTextGen/minmaxcost.png)
 
