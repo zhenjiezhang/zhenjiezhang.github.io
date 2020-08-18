@@ -89,10 +89,10 @@ Let look at an example and see how Wasserstain distance solves the vanishing gra
 ![why wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/whyWasserstain.png)
 
 
-![why wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/divergenceComparison.png)
+![divergenceComparison]({{ site.baseurl }}/images/2020-08-15-ganTextGen/divergenceComparison.png)
 
 
-![why wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/wasserstainVsJSD.png)
+![wasserstainVsJSD]({{ site.baseurl }}/images/2020-08-15-ganTextGen/wasserstainVsJSD.png)
 
 
 
