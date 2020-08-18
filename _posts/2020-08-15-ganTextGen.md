@@ -75,7 +75,7 @@ In the simplified discrete bucket case, we can generalize the earth movement as 
 
 If we put this into matrix form, we get rows that represent the redistribution from one bucket to all buckets (including itself); and we get columns that represent each bucket receiving from all buckets (including itself).  The results is that, the sum of each row is the amount of earth in the original distribution, and the sum of each column is the earth in the target distribution.
 
-Indices in such a matrix is the fromBucket number and the toBucket number respectively, and the relative distance, abs (|x - y|) , times the amount of earth for that transfer, is the work to be done for this transfer.  And the element-wise sum of the matrix is the total work.  
+Indices in such a matrix is the fromBucket number and the toBucket number respectively, and the relative distance, abs (\|x \- y\|) , times the amount of earth for that transfer, is the work to be done for this transfer.  And the element-wise sum of the matrix is the total work.  
 
 In all such matrices, the one having the smallest element wise sum of earth X distance, is the minimum amount of work for transforming one pile to the other.
 
