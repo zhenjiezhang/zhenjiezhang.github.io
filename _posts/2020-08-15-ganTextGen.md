@@ -10,7 +10,7 @@ published: true
 ![gan model]({{ site.baseurl }}/images/2020-08-15-ganTextGen/GAN.png)
 
 ### Minimax loss function:
-![minimax cost function]({{ site.baseurl }}/images/2020-08-15-ganTextGen/minimaxcost.png)
+![minimax cost function]({{ site.baseurl }}/images/2020-08-15-ganTextGen/minmaxcost.png)
 
 The discriminator wants to maximize L, while the generator wants to minimize L.  They do this with gradient decent, in alternation.
 
@@ -53,11 +53,23 @@ Optimizing minimax loss is computing JSD!
 
 #### gradient vanishing problem
 
+![vanishing gradient]({{ site.baseurl }}/images/2020-08-15-ganTextGen/vanishingGradient.png)
 
 
-#### earth moving metrics
+#### earth mover distance
+Wasserstain distance is also called earth mover distance as it represents the minimum mass in probability that needs to be moved, in order to transform from one distribution to the othre.
+
+![wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/wassernstein.png)
+
+Π(pr,pg) is the set of all possible joint probability distributions between pr and pg, s.t. ∑xγ(x,y)=pg(y) and ∑yγ(x,y)=pr(x). 
+
+![earth mover]({{ site.baseurl }}/images/2020-08-15-ganTextGen/earthmover.png)
+
 
 #### Why Wasserstain
+
+
+#### How to compute Wasserstain
 
 
 ### application of Wasserstain distance in GAN text generation
