@@ -3,6 +3,8 @@ layout: post
 title: Generative Adversarial Networks in Text Generation Research
 published: true
 ---
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 >In this post I will summarize some important research on text generation using Generative Adversarial Networks.  This is not a comprehensive review.  The first focus will be on the application of Wasserstein GAN in text generation.
 
 ## Brief review of generative adversarial networks
