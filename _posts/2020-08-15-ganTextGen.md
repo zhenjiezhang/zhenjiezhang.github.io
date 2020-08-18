@@ -36,9 +36,24 @@ We can use the softmax output layer of the generator, instead of the one-hot tex
 
 #### Jenson-Shannon Divergence and the minimax loss
 In traiing, the discriminator attempts to maximize minimax loss.  The better ddiscriminator is trained, the more accurate the gradient is for the generator.
+
 ![minimax loss for discriminator]({{ site.baseurl }}/images/2020-08-15-ganTextGen/lossford.png)
 
+With some simple derivative computation we can get the optimum discriminator:
+
+![optimum discriminator]({{ site.baseurl }}/images/2020-08-15-ganTextGen/optimumD.png)
+
+This is Jenson-Shannon Divergence:
+
+![jsd]({{ site.baseurl }}/images/2020-08-15-ganTextGen/jsd.png)
+
+Optimizing minimax loss is computing JSD!
+
+![optimum minimax is jsd]({{ site.baseurl }}/images/2020-08-15-ganTextGen/minimaxlossisjsd.png)
+
 #### gradient vanishing problem
+
+
 
 #### earth moving metrics
 
