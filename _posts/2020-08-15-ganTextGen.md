@@ -56,6 +56,8 @@ Optimizing minimax loss is computing JSD!
 ![vanishing gradient]({{ site.baseurl }}/images/2020-08-15-ganTextGen/vanishingGradient.png)
 
 
+
+
 #### earth mover distance
 Wasserstain distance is also called earth mover distance as it represents the minimum mass in probability that needs to be moved, in order to transform from one distribution to the othre.
 
@@ -63,7 +65,21 @@ Wasserstain distance is also called earth mover distance as it represents the mi
 
 Π(pr,pg) is the set of all possible joint probability distributions between pr and pg, s.t. ∑xγ(x,y)=pg(y) and ∑yγ(x,y)=pr(x). 
 
+#### Intuition for the Wasserstain equation
+
+Wasserstan distance pickes the smallest effort to move the earth in a pile (the distribution), so that the pile goes from one shape to the other.  
+
+In the simplified discrete bucket case, we can generalize the earth movement as the redistribution of the earth from each of the buckets to all buckets.
+
 ![earth mover]({{ site.baseurl }}/images/2020-08-15-ganTextGen/earthmover.png)
+
+If we put this into matrix form, we get rows that represent the redistribution from one bucket to all buckets (including itself); and we get columns that represent each bucket receiving from all buckets (including itself).  The results is that, the sum of each row is the amount of earth in the original distribution, and the sum of each column is the earth in the target distribution.
+
+Index in such a matrix is the from-bucket number and the to-bucket number respectively, and the relative distance, abs (|x - y|) , times the amount of earth for that transfer, is the work to be done for this transfer.  And the element-wise sum of the matrix is the total work.  
+
+In all such matrices, the one having the smallest element wise sum of earth X distance, is the minimum amount of work for transforming one pile to the other.
+
+Likewise, in all joint distributions between two distributions (pr, pg), in which the marginal probability along one way is pr, and the marginal probability along the other way is pg, we can find the matrix of least transformation effort with the Wasserstain distance equation.
 
 
 #### Why Wasserstain
