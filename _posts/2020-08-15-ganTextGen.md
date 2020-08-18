@@ -84,6 +84,8 @@ Likewise, in all joint distributions between two distributions (pr, pg), in whic
 
 #### Why Wasserstain
 
+$$\forall x \in R$$
+
 Let look at an example and see how Wasserstain distance solves the vanishing gradient problem.
 
 ![why wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/whyWasserstain.png)
