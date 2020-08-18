@@ -36,7 +36,7 @@ We can use the softmax output layer of the generator, instead of the one-hot tex
 
 #### Jenson-Shannon Divergence and the minimax loss
 In traiing, the discriminator attempts to maximize minimax loss.  The better ddiscriminator is trained, the more accurate the gradient is for the generator.
-![minimax loss for discriminator]({{ site.baseurl }}/images/2020-08-15-ganTextGen/lossford.PNG)
+![minimax loss for discriminator]({{ site.baseurl }}/images/2020-08-15-ganTextGen/lossford.png)
 
 #### gradient vanishing problem
 
@@ -46,8 +46,3 @@ In traiing, the discriminator attempts to maximize minimax loss.  The better ddi
 
 
 ### application of Wasserstain distance in GAN text generation
-
-
-
-
-
