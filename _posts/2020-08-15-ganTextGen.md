@@ -86,11 +86,43 @@ Likewise, in all joint distributions between two distributions (pr, pg), in whic
 
 Let look at an example and see how Wasserstain distance solves the vanishing gradient problem.
 
+![why wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/whyWasserstain.png)
 
+
+![why wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/divergenceComparison.png)
+
+
+![why wasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/wasserstainVsJSD.png)
 
 
 
 #### How to compute Wasserstain
 
+**Lipschitz continuity
+R -> R function f is K-Lipschitz continuous if:
+![Lipschitz]({{ site.baseurl }}/images/2020-08-15-ganTextGen/Lipschitz.png)
+
+For all x1, x2.
+
+**Kantorovich-Rubinstein duality ([derivation](https://vincentherrmann.github.io/blog/wasserstein/))
+
+![Kantorovich-Rubinstein duality]({{ site.baseurl }}/images/2020-08-15-ganTextGen/krduality.png)
+
+
+∥f∥L≤K means f is K-Lipschitz continuous
+You can use a discriminator to learn f.
+
+
+![wasserstain gradient]({{ site.baseurl }}/images/2020-08-15-ganTextGen/wassernsteinGradientForD.png)
+
+This is a well defined gradient even when g and r are disjoint.
+
 
 ### application of Wasserstain distance in GAN text generation
+
+
+
+
+
+
+
