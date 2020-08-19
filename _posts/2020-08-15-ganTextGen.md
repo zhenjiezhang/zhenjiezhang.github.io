@@ -101,13 +101,13 @@ Let look at an example and see how Wasserstain distance solves the vanishing gra
 
 #### How to compute Wasserstain
 
-*Lipschitz continuity*
+**Lipschitz continuity**
 R -> R function f is K-Lipschitz continuous if:
 ![Lipschitz]({{ site.baseurl }}/images/2020-08-15-ganTextGen/Lipschitz.png)
 
 For all x1, x2.
 
-*Kantorovich-Rubinstein duality* ([derivation](https://vincentherrmann.github.io/blog/wasserstein/))
+**Kantorovich-Rubinstein duality** ([derivation](https://vincentherrmann.github.io/blog/wasserstein/))
 
 ![Kantorovich-Rubinstein duality]({{ site.baseurl }}/images/2020-08-15-ganTextGen/krduality.png)
 
@@ -130,13 +130,13 @@ In this research, the authors directly use the sequence of output probabilities 
 ![rnnWasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/rnnWasserstain.png)
 
 
-**LSTM 
+**LSTM** 
 
 LSTM with a peehole for alleviating the exposure bias problem
 
 ![lstm-peehole]({{ site.baseurl }}/images/2020-08-15-ganTextGen/lstm-peehole.png)
 
-**CNN
+**CNN**
 
 5 residual blocks, each with 2 1-D convolution layers.  A final 1-D convolution layer outputs the transformed vectors
 
@@ -144,14 +144,14 @@ LSTM with a peehole for alleviating the exposure bias problem
 
 start from shorter sentences, get longer gradually
 
-**WGAN-GP
+**WGAN-GP**
 
 [Improved Training of Wasserstein GANs](https://arxiv.org/pdf/1704.00028.pdf)
 
 GAN using Wasserstein distance, with gradient penalty for enforcing Lipschitz continuity.
 Vanila WGAN achieves this by clamping the discriminator weights within a small range.
 
-**Results
+**Results**
 
 CFG sentence generation
 
