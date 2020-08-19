@@ -101,13 +101,13 @@ Let look at an example and see how Wasserstain distance solves the vanishing gra
 
 #### How to compute Wasserstain
 
--Lipschitz continuity
+*Lipschitz continuity*
 R -> R function f is K-Lipschitz continuous if:
 ![Lipschitz]({{ site.baseurl }}/images/2020-08-15-ganTextGen/Lipschitz.png)
 
 For all x1, x2.
 
-**Kantorovich-Rubinstein duality ([derivation](https://vincentherrmann.github.io/blog/wasserstein/))
+*Kantorovich-Rubinstein duality* ([derivation](https://vincentherrmann.github.io/blog/wasserstein/))
 
 ![Kantorovich-Rubinstein duality]({{ site.baseurl }}/images/2020-08-15-ganTextGen/krduality.png)
 
