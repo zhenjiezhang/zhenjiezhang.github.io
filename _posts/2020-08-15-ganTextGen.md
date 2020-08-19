@@ -101,7 +101,7 @@ Let look at an example and see how Wasserstain distance solves the vanishing gra
 
 #### How to compute Wasserstain
 
-**Lipschitz continuity
+-Lipschitz continuity
 R -> R function f is K-Lipschitz continuous if:
 ![Lipschitz]({{ site.baseurl }}/images/2020-08-15-ganTextGen/Lipschitz.png)
 
