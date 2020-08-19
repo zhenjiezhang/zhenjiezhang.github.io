@@ -86,7 +86,6 @@ Likewise, in all joint distributions between two distributions (pr, pg), in whic
 
 #### Why Wasserstain
 
-$$\forall x \in R$$
 
 Let look at an example and see how Wasserstain distance solves the vanishing gradient problem.
 
@@ -126,6 +125,8 @@ This is a well defined gradient even when g and r are disjoint.
 
 [Adversarial Generation of Natural Language](https://arxiv.org/abs/1705.10929)
 
+In this research, the authors directly use the sequence of output probabilities from the generator, and onehot encoded sentences from the real data.
+
 ![rnnWasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/rnnWasserstain.png)
 
 
@@ -144,6 +145,8 @@ LSTM with a peehole for alleviating the exposure bias problem
 start from shorter sentences, get longer gradually
 
 **WGAN-GP
+
+[Improved Training of Wasserstein GANs](https://arxiv.org/pdf/1704.00028.pdf)
 
 GAN using Wasserstein distance, with gradient penalty for enforcing Lipschitz continuity.
 Vanila WGAN achieves this by clamping the discriminator weights within a small range.
