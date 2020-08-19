@@ -124,7 +124,29 @@ This is a well defined gradient even when g and r are disjoint.
 
 ### application of Wasserstain distance in GAN text generation
 
+[Adversarial Generation of Natural Language](https://arxiv.org/abs/1705.10929)
 
+![rnnWasserstain]({{ site.baseurl }}/images/2020-08-15-ganTextGen/rnnWasserstain.png)
+
+
+**LSTM 
+
+LSTM with a peehole for alleviating the exposure bias problem
+
+![lstm-peehole]({{ site.baseurl }}/images/2020-08-15-ganTextGen/lstm-peehole.png)
+
+**CNN
+
+5 residual blocks, each with 2 1-D convolution layers.  A final 1-D convolution layer outputs the transformed vectors
+
+**Curriculum learning
+
+start from shorter sentences, get longer gradually
+
+**WGAN-GP
+
+GAN using Wasserstein distance, with gradient penalty for enforcing Lipschitz continuity.
+Vanila WGAN achieves this by clamping the discriminator weights within a small range.
 
 
 
