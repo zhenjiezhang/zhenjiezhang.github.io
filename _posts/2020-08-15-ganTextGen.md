@@ -151,7 +151,22 @@ start from shorter sentences, get longer gradually
 GAN using Wasserstein distance, with gradient penalty for enforcing Lipschitz continuity.
 Vanila WGAN achieves this by clamping the discriminator weights within a small range.
 
+**Results
 
+CFG sentence generation
 
+![CFG]({{ site.baseurl }}/images/2020-08-15-ganTextGen/cfg.png)
+
+Chinese poem generation
+
+![chinese poem]({{ site.baseurl }}/images/2020-08-15-ganTextGen/poem.png)
+
+Generated sentence samples
+
+![sentence samples]({{ site.baseurl }}/images/2020-08-15-ganTextGen/generatedSentences.png)
+
+Conditionally generated sentence samples
+
+![conditionalGeneration]({{ site.baseurl }}/images/2020-08-15-ganTextGen/conditionalGeneration.png)
 
 
